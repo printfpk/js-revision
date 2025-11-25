@@ -33,3 +33,19 @@ var mutiply = arr.reduce(function(acc, val){
     return acc * val; //120
 }, 1)
 
+//Use a for...of loop to iterate over the string "JavaScript
+let str = "JavaScript";
+for(let i of str){
+    console.log(i);
+}
+
+//remove duplicate item from array
+let arr = [1, 2, 2, 3, 4, 4, 5];
+let ans = [...new Set(arr)]; //[1,2,3,4,5]
+console.log(ans)
+
+//2nd largest number in array
+let arr = [3,1,4,3,1,2,5]
+let ans = [...new Set(arr)];
+ans.sort((a,b) => b-a);
+console.log(ans[1]) //4
